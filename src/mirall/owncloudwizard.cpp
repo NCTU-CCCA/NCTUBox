@@ -70,6 +70,7 @@ OwncloudSetupPage::OwncloudSetupPage()
     _ui.resultLayout->addWidget( _progressIndi );
     _progressIndi->setVisible(false);
     _ui.resultLayout->setEnabled(false);
+    _ui.leUrl->setDisabled(true);
 
     // Error label
     QString style = QLatin1String("border: 1px solid #eed3d7; border-radius: 5px; padding: 3px;"

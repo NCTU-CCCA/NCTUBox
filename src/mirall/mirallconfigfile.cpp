@@ -282,6 +282,8 @@ QString MirallConfigFile::ownCloudUrl( const QString& connection) const
     QString url = settings.value( QLatin1String("url") ).toString();
     if( ! url.isEmpty() ) {
         if( ! url.endsWith(QLatin1Char('/'))) url.append(QLatin1String("/"));
+    }else{
+        url = QString("https://box.nctu.edu.tw");
     }
 
     qDebug() << "Returning configured owncloud url: " << url;
