@@ -39,12 +39,12 @@ QString ownCloudTheme::appName() const
      * because the value is used by QDesktopServices to find the config
      * file. Be aware.
      */
-    return QLatin1String("ownCloud");
+    return QLatin1String("NCTUBox");
 }
 
 QString ownCloudTheme::configFileName() const
 {
-    return QLatin1String("owncloud.cfg");
+    return QLatin1String("nctubox.cfg");
 }
 
 QString ownCloudTheme::about() const
